@@ -1,0 +1,39 @@
+
+
+<div class="container-fluid bg-light">
+    <div class="row">
+   
+        <div class="col-sm-3" style="margin-top:15px;margin-bottom:10px" *ngFor = "let p of product ">
+            
+            <figure>
+                <div><img class="rounded" [src]="p.prod_imgpath" height=250px width=300px ></div>
+                    <figcaption>
+                        <h4 >{{p.prod_imgname}}</h4>
+                        
+                                      
+                       {{p.prod_review}}                   
+                       <span style="float:right">	&#9733;	&#9733;	&#9733;	&#9734;	&#9734;</span>
+                    </figcaption><br/>
+               <div>
+                    <div>
+                    
+                        <label class="radio-inline">
+                          <input type="radio" name="size" checked><small>{{p.prod_size}} Available</small> &nbsp;&nbsp;
+                        </label>
+                  
+                    </div>
+                    <a [routerLink]="['/cartadd',p.id]" class="btn btn-sm btn-primary float-right">Order Now</a>
+                    <div>
+                        &#8377; {{p.prod_price}}&nbsp;&nbsp;  <s> &#8377;{{p.prod_offerprice}}</s>
+                    </div>
+                </div>
+              
+            </figure>
+        
+        </div>
+
+    
+    </div>
+</div>
+
+

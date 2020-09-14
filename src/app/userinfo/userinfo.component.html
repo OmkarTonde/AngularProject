@@ -1,0 +1,37 @@
+<div class="jumbotron bg-secondary">
+    <h1 style="margin-top:10px;text-align:center;">User Information</h1>
+    
+<div class="jumbotron" style="margin-top:10px;text-align:center;">
+    <table class="bg-muted table table-bordered table-striped table-hover">
+    <thead>
+        <tr> 
+            <th style="text-align: center;background-color: gray;color:white"
+             colspan="5">User Details</th><th colspan="2"><input type="text" class="form-control" [(ngModel)]="term"  placeholder="Search here" name="search" /></th>
+        </tr>
+        <tr>
+            <th> User Name </th>
+            <th> User Password</th>
+            <th> User Email </th>
+            <th> User Number </th>
+            <th> User location </th>
+            <th>Edit User Data</th>
+            <th>Delete User Data</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let u of user | filter:term">
+            <td>{{u.user_name}}</td>
+            <td>{{u.user_password}}</td>
+            <td>{{u.user_email}}</td>
+            <td>{{u.user_number}}</td>
+            <td>{{u.user_location}}</td>
+       
+            <td><a class="btn btn-info" [routerLink]="['/update',u.id]"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+            <td><a class="btn btn-danger" (click) = "delete(u.id)"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+        </tr>
+    </tbody>
+</table>
+<a  class="btn btn-info" style="float:right" href ="/admin" >Back to Admin page</a>
+
+</div>
+</div>

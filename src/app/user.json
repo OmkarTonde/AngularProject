@@ -1,0 +1,76 @@
+{
+  "user": [
+    {
+      "user_name": "omkar",
+      "user_password": "tonde",
+      "user_email": "omakr@gmail.com",
+      "user_number": "839049495",
+      "user_location": "Gujrat",
+      "id": 1
+    },
+    {
+      "user_name": "omkar",
+      "user_password": "todne",
+      "user_email": "omkar.tonde0@gmail.com",
+      "user_number": 8390494995,
+      "user_location": "Delhi",
+      "id": 2
+    },
+    {
+      "user_name": "akshaya",
+      "user_password": "tonde",
+      "user_email": "akshaya@gmil.com",
+      "user_number": 988185170,
+      "user_location": "Karntaka",
+      "id": 3
+    },
+    {
+      "user_name": "omkar",
+      "user_password": "12133",
+      "user_email": "omakr@gmai.com",
+      "user_number": "839049495",
+      "user_location": "Delhi",
+      "id": 4
+    },
+    {
+      "user_name": "kapil",
+      "user_password": "kadam",
+      "user_email": "kapil@gmail.com",
+      "user_number": "8390494995",
+      "user_location": "Delhi",
+      "id": 5
+    },
+    {
+      "user_name": "chintan",
+      "user_password": "bharagwe",
+      "user_email": "chintan@gamil.com",
+      "user_number": "8723423442",
+      "user_location": "Delhi",
+      "id": 6
+    },
+    {
+      "user_name": "tejas",
+      "user_password": "polywl",
+      "user_email": "tejas@gmail.com",
+      "user_number": "8834234234",
+      "user_location": "Karntaka",
+      "id": 9
+    },
+    {
+      "user_name": "ramesh",
+      "user_password": "shukla",
+      "user_email": "ramesh@gmail.com",
+      "user_number": "9801230123",
+      "user_location": "Maharashtra",
+      "id": 11
+    },
+    {
+      "user_name": "akshaya",
+      "user_password": "1231",
+      "user_email": "11232131",
+      "user_number": "8390494995",
+      "user_location": "Punjab",
+      "id": 12
+    }
+  ]
+}

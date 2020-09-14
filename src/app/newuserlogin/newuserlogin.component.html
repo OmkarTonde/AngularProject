@@ -1,0 +1,82 @@
+<div class="jumbotron bg-secondary">
+<h1 style="margin-top:30px;text-align:center;">Register here !!</h1>
+    <div class = "container" style="width:430px;margin-top:50px;" >
+
+        <form [formGroup]="form" (ngSubmit)="register()">
+            <div class="form-group">
+                <label>Name : </label>
+                <input type="text" class="form-control" placeholder="Enter your name" 
+                formControlName="user_name" style="width:400px" required/>
+
+                <div class="alert alert-primary" *ngIf = "form.get('user_name').invalid
+                    &&  form.get('user_name').touched">
+
+                    <div *ngIf ="form.get('user_name').errors.required">
+                        name is required
+                    </div>
+
+                    <div *ngIf ="form.get('user_name').errors.pattern">
+                        name should  contain only characters
+                    </div>
+                </div>
+            </div>
+    
+       
+    
+            <div class="form-group">
+                <label>Password : </label>
+                <input type="password" class="form-control" placeholder="Enetr password" 
+                formControlName="user_password" style="width:400px" required/>
+            </div>
+
+            <div class="form-group">
+                <label>Confirm password : </label>
+                <input type="password" class="form-control" placeholder="confirm password" 
+                formControlName="user_password" style="width:400px" required>
+            </div>
+    
+    
+            <div class="form-group">
+                <label>Email : </label>
+                <input type="email" class="form-control" placeholder="@example.com" 
+                formControlName="user_email" style="width:400px" required/>
+
+                <div class="alert alert-primary" *ngIf = "form.get('user_email').invalid
+                    &&  form.get('user_email').touched">
+
+                    <div *ngIf ="form.get('user_email').errors.required">
+                        Email is required
+                    </div>
+
+                </div>
+            </div>
+
+    
+            <div class="form-group">
+                <label>Mobile Number : </label>
+                <input type="text" class="form-control" maxlength="10" formControlName="user_number" 
+                style="width:400px" required/>
+            </div>
+    
+            <div class="form-group"> 
+                <label>Location : </label>&nbsp;&nbsp;&nbsp;
+                <select  formControlName = "user_location">
+    
+                    <option *ngFor = "let b of location" [value]="b">
+                    {{b}}
+                    </option>
+    
+                </select>
+          
+            </div>
+    
+            <div class="form-group"> 
+                <button type="Submit" class="btn btn-success" style="margin-bottom:20px;" >Submit</button> &nbsp;&nbsp;&nbsp;
+                <button type="reset" class="btn btn-danger" style="margin-bottom:20px;" >Reset Form</button> &nbsp;&nbsp;&nbsp;
+            </div>    
+        </form>
+    
+    
+    </div>
+
+</div>

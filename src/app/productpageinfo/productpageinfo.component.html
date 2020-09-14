@@ -1,0 +1,38 @@
+<div class="jumbotron" style="margin-top:100px;text-align:center;"          >
+    <table class="bg-muted table table-bordered table-striped table-hover">
+    <thead>
+        <tr> 
+            <th style="text-align: center;background-color: slateblue;color:white"
+             colspan="7">Product Details</th><th colspan="2"><input type="text" class="form-control" [(ngModel)]="term"  placeholder="Search here" name="search" /></th>
+        </tr>
+        <tr>
+            <th> Product image </th>
+            <th> Product image name</th>
+            <th> product image desc</th> 
+            <th> product review</th>
+            <th> product size </th>
+            <th> product price</th>
+            <th> product offer price</th>
+            <th>Edit Image Data</th>
+            <th>Delete Image Data</th>
+        </tr>
+    </thead> 
+    <tbody>
+        <tr *ngFor = "let p of product | filter:term">
+            <td><img [src]="p.prod_imgpath" alet="peodcut" height="100x" width="100px"/></td>
+            <td>{{p.prod_imgname}}</td>
+            <td>{{p.prod_imgdesc}}</td>
+            <td>{{p.prod_review}}</td>
+            <td>{{p.prod_size}}</td>
+            <td>{{p.prod_price}}</td>
+            <td>{{p.prod_offerprice}}</td>
+       
+            <td><a class="btn btn-info" [routerLink]="['/updateImg',p.id]"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+            <td><a class="btn btn-danger" (click) = "proddelete(p.id)"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+            
+        </tr>
+    </tbody>
+</table>
+<a  class="btn btn-info" style="float:right" href ="/admin" >Back to Admin page</a>
+</div>
+

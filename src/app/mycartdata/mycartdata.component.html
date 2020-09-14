@@ -1,0 +1,51 @@
+ <div class="jumbotron" style="margin-top:10px;text-align:center;">
+    <h1 style="text-align:center;">Your orders</h1>
+   
+
+
+    <table class="bg-muted table table-bordered table-striped table-hover" align="center">
+    <thead>
+        <tr> 
+            <th style="text-align: center;background-color: slateblue;color:white"
+             colspan="9">Product Details</th>
+        </tr>
+        
+            <tr><th colspan="2"><img [src]="product.prod_imgpath" height=200px width=250px> </th></tr>
+            <tr><th>Name : </th><th > {{product.prod_imgname}} </th></tr>
+            <tr><th>Description : </th><th > {{product.prod_imgdesc}} </th></tr>
+            <tr><th>size : </th><th > {{product.prod_size}} </th></tr>
+            <tr><th>Price : </th><th >  &#8377;<s> {{product.prod_price}}</s>  &nbsp;&nbsp; &#8377;{{product.prod_offerprice}}</th></tr>
+
+            <tr><th>Quantity : </th><th><input type="number" name="qnt" id="qnt" /> </th></tr>
+            <tr><th>Payment : </th><th>Only Cash On Delivery(COD) Available</th></tr>
+            <tr><th>Total : </th><th><a  class="btn btn-info" (click)="Total(qnt,product.prod_offerprice)">Total</a></th></tr>
+            <tr><th colspan="2"><a class="btn btn-danger" (click) = "proddelete()">Remove</a> &nbsp;&nbsp;
+                &nbsp;&nbsp;    <a class="btn btn-info" (click)="confirm()">Confirm Order</a>  &nbsp;&nbsp;  
+                <a class="btn btn-info" href="/grid">Back to shopping</a> 
+            </th></tr>
+               
+            
+               
+            
+    </thead>
+
+</table>
+
+</div>
+
+<!-- <script>
+
+    function Total1(prod)
+    var a = document.getElementById("qnt").value;
+
+    var total = a * prod;
+
+    alert("total is "+total);
+
+</script> -->
+
+
+
+
+
+

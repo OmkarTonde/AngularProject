@@ -1,0 +1,43 @@
+
+<div class="jumbotron">
+
+    <div class="alert">
+    If you are new user then for the better experience please register here---><a href="/new" class="alert-link">Register</a>
+      </div>
+
+<h1 style="margin-top:20px;text-align:center;">Log In !!</h1>
+
+<!-- <div class="container pt-3 my-3 width=400px"  style="background-color: cadetblue;"> -->
+    <div class = "container pt-3 my-3 " style="width:430px;margin-top:50px;">
+
+    <form [formGroup]="form" (ngSubmit)="register()" > 
+        <div class="form-group">
+            <label>User Name : </label>
+            <input type="text" class="form-control" placeholder="Enetr your name" 
+            formControlName="olduser_name" style="width:400px" required/>
+        </div>
+
+   
+
+        <div class="form-group" style="margin-bottom:50px;" >
+            <label>Password : </label>
+            <input type="password" name="password" class="form-control" placeholder="password" 
+            formControlName="olduser_password" style="width:400px" required/>
+        </div>
+
+       
+
+        <button type="Submit" class="btn btn-success" style="margin-left:70px;margin-bottom:20px;text-align:center;width:250px" >Login</button><br/>
+            
+        <a  class="btn btn-dark" style="text-align:center;margin-left:70px;margin-bottom:20px;width:250px;" href ="/new" >Sign up?</a><br/>
+
+     
+        
+
+    </form>
+   
+
+</div>
+
+
+</div> 

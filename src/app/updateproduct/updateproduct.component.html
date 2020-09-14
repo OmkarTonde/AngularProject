@@ -1,0 +1,59 @@
+    <div class="jumbotron bg-secondary">
+<h1 style="margin-top:30px;text-align:center;">----Update data----</h1>
+    <div class = "container" style="width:430px;margin-top:50px;background-color: cadetblue;" >
+
+        <form [formGroup]="form" (ngSubmit)="update()">
+            <div class="form-group">
+                <label>Image path :</label>
+                <input type="text" class="form-control" placeholder="Enter img path" 
+                formControlName="prod_imgpath" style="width:400px"/>
+            </div>
+    
+            <div class="form-group">
+                <label>Image Name: </label>
+                <input type="text" class="form-control" 
+                formControlName="prod_imgname" style="width:400px">
+            </div>
+
+            <div class="form-group">
+                <label>Image Description</label>
+                <input type="text" class="form-control"
+                formControlName="prod_imgdesc" style="width:400px">
+            </div>
+    
+    
+            <div class="form-group">
+                <label>Reviews/Rating</label>
+                <input type="text" class="form-control" 
+                formControlName="prod_review" style="width:400px" />
+
+            </div>
+
+    
+            <div class="form-group">
+                <label>Product size : </label>
+                <input type="text" class="form-control" 
+                formControlName="prod_size" style="width:400px">
+            </div>
+    
+            <div class="form-group"> 
+                <label>Product Price: </label>&nbsp;&nbsp;&nbsp;
+                <input type="text" class="form-control" 
+                formControlName="prod_price" style="width:400px">
+            </div>
+
+            <div class="form-group"> 
+                <label>Product offer Price: </label>&nbsp;&nbsp;&nbsp;
+                <input type="text" class="form-control" 
+                formControlName="prod_offerprice" style="width:400px">
+            </div>
+    
+            <div class="form-group"> 
+                <button type="Submit" class="btn btn-success" style="margin-bottom:20px;" >Add</button> &nbsp;&nbsp;&nbsp;
+                <button type="reset" class="btn btn-danger" style="margin-bottom:20px;" >Clear</button> &nbsp;&nbsp;&nbsp;
+            </div>    
+        </form>
+        <a  class="btn btn-info" style="float:right" href ="/admin" >Back to Admin page</a>
+    
+    </div>
+</div>
