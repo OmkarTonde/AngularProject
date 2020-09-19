@@ -92,5 +92,10 @@ export class DataService {
     this.toastr.info(message,title);
 
   }
+
+
+  getUserData2(){
+    return this.httpclient.get("http://localhost/php_crud/getUserData.php");
+  }
   
 }

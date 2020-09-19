@@ -30,7 +30,7 @@ export class UserinfoComponent implements OnInit {
 
       this.dataservice.deleteData(id).subscribe((res)=>{
 
-      alert("Data deleted Successfully")
+      this.dataservice.showSuccess("Data deleted Successfully","");
 
       this.getUserData()
 

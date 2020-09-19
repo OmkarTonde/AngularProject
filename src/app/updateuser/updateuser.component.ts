@@ -37,7 +37,7 @@ export class UpdateuserComponent implements OnInit {
 
     this.dataservice.showSuccess("Data updated successfully","");
 
-    this.router.navigateByUrl("/userinfo");
+   // this.router.navigateByUrl("/userinfo");
 
     })
 

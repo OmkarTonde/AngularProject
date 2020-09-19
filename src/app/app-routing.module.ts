@@ -15,6 +15,7 @@ import { ProductgridComponent } from './productgrid/productgrid.component';
 import { MycartdataComponent } from './mycartdata/mycartdata.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { InformationComponent } from './information/information.component';
+import { MyaccountComponent } from './myaccount/myaccount.component';
 
 const routes: Routes = [
   {path:"", component:HomepageComponent},
@@ -34,7 +35,8 @@ const routes: Routes = [
 {path:"userinfo",component:UserinfoComponent},
 {path:"mycart",component:MycartdataComponent},
 {path:"cartadd/:id",component:MycartdataComponent},
-{path:"info",component:InformationComponent}
+{path:"info",component:InformationComponent},
+{path:"myaccount",component:MyaccountComponent}
 
 
 

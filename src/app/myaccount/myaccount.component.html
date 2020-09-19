@@ -1,0 +1,39 @@
+<div class="jumbotron bg-secondary">
+    <h1 style="margin-top:10px;text-align:center;">My Account</h1>
+    
+<div class="jumbotron" style="margin-top:10px;text-align:center;">
+    <table class="bg-muted table table-bordered table-striped table-hover">
+    <thead>
+        <tr> 
+            <th style="text-align: center;background-color: gray;color:white"
+             colspan="7">Your Details</th>
+        </tr>
+        <tr>
+            <th> User Name </th>
+            <th> User Password</th>
+            <th> User Email </th>
+            <th> User Number </th>
+            <th> User location </th>
+            <th>Edit User Data</th>
+            <th>Delete User Data</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- <tr *ngFor = "let u of user "> -->
+            <tr>
+            <td>{{user.user_name}}</td>
+            <td>{{user.user_password}}</td>
+            <td>{{user.user_email}}</td>
+            <td>{{user.user_number}}</td>
+            <td>{{user.user_location}}</td>
+       
+            <td><a class="btn btn-info" [routerLink]="['/update',user.id]"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+            <td><a class="btn btn-danger" (click) = "Remove(user.id)"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+        </tr>
+    </tbody>
+</table>
+<a  class="btn btn-info" style="float:right" href ="/prod" >Back to Shopping</a>
+
+</div>
+</div>
+

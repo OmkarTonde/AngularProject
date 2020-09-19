@@ -49,16 +49,19 @@ export class LoginformComponent implements OnInit {
         if (this.form.value.olduser_name == this.user[this.i].user_name && this.form.value.olduser_password == this.user[this.i].user_password && this.user[this.i].user_name!=0 )
         {
           this.router.navigateByUrl("prod");
-          
+          this.router.navigate(['myaccount', {p1:this.user[this.i].id }]); 
           this.dataservice.showSuccess("Logged in successfully.....","Welcome "+this.user[this.i].user_name );
+          console.log(this.user[this.i].id )
          // alert("Logged in successfully.....\nWelcome, " +this.user[this.i].user_name);
           this.count=1; 
+          break;
         }
 
       }
        if(this.form.value.olduser_name == "admin" && this.form.value.olduser_password == "admin@123")
         { 
           this.router.navigateByUrl("admin");
+    
           this.dataservice.showSuccess("Logged in successfully....." ,"Welcome,Admin");
           //alert("Logged in successfully.....\nWelcome,Admin"); 
           this.count=1;

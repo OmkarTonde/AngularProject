@@ -1,9 +1,10 @@
 
 
 <div class="container-fluid bg-light">
+    <input type="text" style="width:200px;float:center;margin-left:600px;" class="form-control" [(ngModel)]="term"  placeholder="Search here" name="search" />
     <div class="row">
    
-        <div class="col-sm-3" style="margin-top:15px;margin-bottom:10px" *ngFor = "let p of product ">
+        <div class="col-sm-3" style="margin-top:15px;margin-bottom:10px" *ngFor = "let p of product | filter:term">
             
             <figure>
                 <div><img class="rounded" [src]="p.prod_imgpath" height=250px width=300px ></div>

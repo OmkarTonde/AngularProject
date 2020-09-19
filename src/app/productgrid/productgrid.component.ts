@@ -10,6 +10,7 @@ import { Product } from '../newproduct/product';
 export class ProductgridComponent implements OnInit {
 
   product :any ;
+  term:any;
   
 
   getProdData(){

@@ -3,17 +3,17 @@
     {
       "user_name": "omkar",
       "user_password": "tonde",
-      "user_email": "omakr@gmail.com",
-      "user_number": "839049495",
-      "user_location": "Gujrat",
+      "user_email": "omakr.tonde0@gmail.com",
+      "user_number": "839049496",
+      "user_location": "Maharashtra",
       "id": 1
     },
     {
       "user_name": "omkar",
       "user_password": "todne",
       "user_email": "omkar.tonde0@gmail.com",
-      "user_number": 8390494995,
-      "user_location": "Delhi",
+      "user_number": "8390444444",
+      "user_location": "Karntaka",
       "id": 2
     },
     {
@@ -71,6 +71,30 @@
       "user_number": "8390494995",
       "user_location": "Punjab",
       "id": 12
+    },
+    {
+      "user_name": "omkar",
+      "user_password": "tonde",
+      "user_email": "omkar.tonde0@gmail.om",
+      "user_number": "8390494995",
+      "user_location": "Maharashtra",
+      "id": 13
+    },
+    {
+      "user_name": "omkar",
+      "user_password": "tondw",
+      "user_email": "omkar.tonde0@gmail.com",
+      "user_number": "8390494995",
+      "user_location": "Maharashtra",
+      "id": 14
+    },
+    {
+      "user_name": "infoway",
+      "user_password": "student",
+      "user_email": "infoway@gmail.com",
+      "user_number": "8390494949",
+      "user_location": "Delhi",
+      "id": 15
     }
   ]
 }

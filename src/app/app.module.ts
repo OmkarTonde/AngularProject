@@ -25,7 +25,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import{ CarouselModule} from 'ngx-bootstrap/carousel';
 import { HomepageComponent } from './homepage/homepage.component';
 import { InformationComponent } from './information/information.component'
-import{Ng2SearchPipeModule} from 'ng2-search-filter'
+import{Ng2SearchPipeModule} from 'ng2-search-filter';
+import { MyaccountComponent } from './myaccount/myaccount.component';
 
 
 
@@ -51,6 +52,10 @@ import{Ng2SearchPipeModule} from 'ng2-search-filter'
     HomepageComponent,
    
     InformationComponent,
+   
+    MyaccountComponent,
+   
+  
   
       
   ],
